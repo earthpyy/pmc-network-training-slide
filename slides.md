@@ -102,9 +102,74 @@ These IPs cannot be used to create a connection through the internet, always.
 -->
 
 ---
+
+# Ports
+
+<br>
+
+<img src="/assets/ip/port.jpg" class="mx-auto">
+
+<!--
+Next one is "Ports".
+
+There are a few things you'll need to know about ports.
+
+Port is basically a virtual interface which is used for communicate between two devices.  
+We might familiar with the server ports but actually every device has ports.  
+For example, port 80 or 443 in the server which is used for accessing the website.  
+But in our machine, there is also port in used as well in order to talk with port 80 on the server.  
+In this diagram it is port 5000.
+-->
+
+---
+
+# Well-known Ports
+
+<br>
+
+| **Port** | **Service** |
+| ---- | ---- |
+| 80 | HTTP |
+| 443 | HTTPS |
+| 21 | FTP |
+| 22 | SSH, SFTP [^1] (default) |
+| 22222 | SSH, SFTP (after server hardened) |
+| 5432 | PostgreSQL (database) |
+
+[^1]: SFTP = Secure File Transfer Protocol (basically is FTP via SSH)
+
+---
 layout: section
 ---
 
 # Firewall
 
 <!-- Let's move to Firewall -->
+
+---
+
+![what-is-firewall](/assets/firewall/what-is-firewall.jpg)
+
+<!-- Firewall is a network security system which can filter incoming and outgoing traffic. -->
+
+---
+
+# Firewall Rules
+
+Note that these are only "incoming rules"
+
+![firewall-rules](/assets/firewall/firewall-rules.png)
+
+<!--
+In order to activate the firewall, we'll need to setup a rule of traffic that we'll allow or deny. It's called "Firewall Rules".
+
+This is an example of firewall rules from CloudHM which we're familiar with.
+
+In the first 5 records, we allow some machines to connect with our port number 22, 5432, 22222.  
+And the last one is 0.0.0.0/0 which allow any machines to connect with port number 80, 443.
+
+There is also "outgoing rules" but normally our VMs are allowed for any outgoing connection.  
+It may not be in the on-premise server.
+
+Firewall plays a huge role in network security. Therefore, it is a best practice to always setup a firewall in order to prevent unwanted traffic from an attacker.
+-->
