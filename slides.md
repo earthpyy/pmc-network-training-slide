@@ -173,3 +173,25 @@ It may not be in the on-premise server.
 
 Firewall plays a huge role in network security. Therefore, it is a best practice to always setup a firewall in order to prevent unwanted traffic from an attacker.
 -->
+
+---
+layout: section
+---
+
+# VPN
+
+<!-- The last one is VPN -->
+
+---
+
+# What is VPN?
+
+<br>
+
+<img src="/assets/vpn/what-is-vpn.png" class="mx-auto w-800px">
+
+<!--
+Actually, the main purpose of VPN is to securely browse the internet without any man-in-the-middle seeing what you're browsing because the traffic between us and VPN server is securely encrypted.  
+
+The internet also seeing that the connected IP is VPN IP, not ours. This is because the actual connection to the target server comes from VPN server which we requested for.
+-->
