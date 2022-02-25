@@ -168,8 +168,7 @@ This is an example of firewall rules from CloudHM which we're familiar with.
 In the first 5 records, we allow some machines to connect with our port number 22, 5432, 22222.  
 And the last one is 0.0.0.0/0 which allow any machines to connect with port number 80, 443.
 
-There is also "outgoing rules" but normally our VMs are allowed for any outgoing connection.  
-It may not be in the on-premise server.
+There is also "outgoing rules" but normally our VMs are allowed for any outgoing connection.
 
 Firewall plays a huge role in network security. Therefore, it is a best practice to always setup a firewall in order to prevent unwanted traffic from an attacker.
 -->
@@ -195,3 +194,23 @@ Actually, the main purpose of VPN is to securely browse the internet without any
 
 The internet also seeing that the connected IP is VPN IP, not ours. This is because the actual connection to the target server comes from VPN server which we requested for.
 -->
+
+---
+
+# VPN & Firewall
+
+| Incoming IP | Rule |
+| ----------- | ---- |
+| 117.121.212.100 | Allow |
+
+<br>
+
+<img src="/assets/vpn/with-wo-vpn.jpg" class="mx-auto h-350px">
+
+---
+
+# VPN & Firewall
+
+<br>
+
+<img src="/assets/vpn/vpn-lan.png" class="mx-auto">
