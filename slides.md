@@ -199,6 +199,20 @@ The internet also seeing that the connected IP is VPN IP, not ours. This is beca
 
 # VPN & Firewall
 
+<br>
+
+<img src="/assets/vpn/vpn-lan.jpg" class="mx-auto">
+
+<!--
+Roughly speaking, when VPN is enabled, it's like we're sitting that the end side.  
+
+That enables us to access an internal-only application behind the firewall.
+-->
+
+---
+
+# VPN & Firewall
+
 | Incoming IP | Rule |
 | ----------- | ---- |
 | 117.121.212.100 | Allow |
@@ -206,11 +220,3 @@ The internet also seeing that the connected IP is VPN IP, not ours. This is beca
 <br>
 
 <img src="/assets/vpn/with-wo-vpn.jpg" class="mx-auto h-350px">
-
----
-
-# VPN & Firewall
-
-<br>
-
-<img src="/assets/vpn/vpn-lan.png" class="mx-auto">
