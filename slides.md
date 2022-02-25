@@ -220,3 +220,14 @@ That enables us to access an internal-only application behind the firewall.
 <br>
 
 <img src="/assets/vpn/with-wo-vpn.jpg" class="mx-auto h-350px">
+
+<!--
+Suppose we have a firewall rule to blocked every incoming traffic by default.  
+Only IP 117.121.212.100 is allowed.
+
+In the upper diagram, without VPN, you'll see that our outgoing IP is 103.245.115.100 which is not allowed.
+
+But in the lower diagram, with VPN, actually our outgoing IP still same, but the destination server is VPN server, instead of the real server.  
+Therefore, the actual IP that the server receives will be an IP of VPN server instead, which is 117.121.212.100.  
+So, the traffic is allowed.
+-->
